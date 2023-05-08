@@ -26,15 +26,9 @@ export class App extends Component {
   };
 
   handleLeaveFeedback = event => {
-    console.log([event]);
-    console.log(event);
+  
     this.setState(prevState => ({ [event]: prevState[event] + 1 }));
   };
-
-  // handleLeaveFeedback = event => {
-  //   console.log([event]);
-  //   this.setState({ [event]: this.state[event] + 1 });
-  // };
 
   render() {
     const { good, neutral, bad } = this.state;
